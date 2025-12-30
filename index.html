@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Minutes: Project Update</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .th-text {
+            font-family: 'Sarabun', sans-serif;
+        }
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+            }
+            .no-break {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 p-4 md:p-8">
+
+    <div class="max-w-7xl mx-auto bg-white shadow-lg rounded-xl overflow-hidden">
+        
+        <!-- Header -->
+        <header class="bg-slate-800 text-white p-6 border-b border-slate-700">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div>
+                    <h1 class="text-2xl md:text-3xl font-bold uppercase tracking-wide">Meeting Minutes</h1>
+                    <h2 class="text-xl md:text-2xl font-light th-text mt-1">บันทึกรายงานการประชุม</h2>
+                </div>
+                <div class="mt-4 md:mt-0 text-right opacity-80 text-sm">
+                    <p>Project Update & Strategy</p>
+                    <p class="th-text">อัปเดตโครงการและกลยุทธ์</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content Grid -->
+        <div class="divide-y divide-gray-200">
+
+            <!-- Section 1: Timeline -->
+            <div class="grid grid-cols-1 md:grid-cols-2 no-break">
+                <div class="p-6">
+                    <h3 class="text-lg font-bold text-blue-700 mb-3">Project Timeline Update</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-sm md:text-base text-gray-700">
+                        <li><strong>Progress:</strong> Ahead of schedule, allowing for earlier execution.</li>
+                        <li><strong>Revised Timeline:</strong> Pilot testing with landlord users to begin by <strong>January 7th</strong> (moved up from March).</li>
+                        <li><strong>Go-to-Market:</strong> Targeted for March, following MVP validation with pilot users.</li>
+                        <li><strong>Payment Gateway:</strong> Decision between Omise and 2C2P will be made after the pilot phase (Jan 7th).</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-slate-50 th-text">
+                    <h3 class="text-lg font-bold text-blue-700 mb-3">อัปเดตไทม์ไลน์โครงการ</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-sm md:text-base text-gray-700">
+                        <li><strong>ความคืบหน้า:</strong> เร็วกว่ากำหนด ทำให้เริ่มดำเนินการได้ก่อนแผนเดิม</li>
+                        <li><strong>ไทม์ไลน์ฉบับปรับปรุง:</strong> เริ่มทดสอบระบบนำร่อง (Pilot testing) กับผู้ให้เช่าภายในวันที่ <strong>7 มกราคม</strong> (เลื่อนเข้ามาจากเดือนมีนาคม)</li>
+                        <li><strong>การบุกตลาด (Go-to-Market):</strong> ตั้งเป้าไว้ที่เดือนมีนาคม หลังจากตรวจสอบความพร้อมของ MVP กับผู้ใช้นำร่องแล้ว</li>
+                        <li><strong>ช่องทางการชำระเงิน:</strong> จะตัดสินใจเลือกระหว่าง Omise หรือ 2C2P หลังจากเสร็จสิ้นเฟสนำร่อง (หลัง 7 ม.ค.)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 2: MVP Front-End -->
+            <div class="grid grid-cols-1 md:grid-cols-2 no-break">
+                <div class="p-6">
+                    <h3 class="text-lg font-bold text-blue-700 mb-3">MVP Demonstration - Front-End</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-sm md:text-base text-gray-700">
+                        <li><strong>Roles:</strong> Supports 5 roles: Admin, Landlord, Manager (Agents), and Tenants.</li>
+                        <li><strong>Admin Features:</strong> System analytics, transactions, property management, and finance overview.</li>
+                        <li><strong>Services Tab:</strong> Integration with home services (Home Pro), repairs, cleaning, and worker availability status.</li>
+                        <li><strong>Settings:</strong> Theme options (light/dark), language, and time zone.</li>
+                        <li><strong>Landlord View:</strong> Focuses on property management, events, finances, and service requests.</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-slate-50 th-text">
+                    <h3 class="text-lg font-bold text-blue-700 mb-3">การสาธิต MVP - ระบบหน้าบ้าน (Front-End)</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-sm md:text-base text-gray-700">
+                        <li><strong>บทบาทผู้ใช้:</strong> รองรับ 5 ประเภท: ผู้ดูแลระบบ (Admin), เจ้าของที่พัก (Landlord), ผู้จัดการ/นายหน้า, และผู้เช่า</li>
+                        <li><strong>ฟีเจอร์ Admin:</strong> ตัวชี้วัดระบบ, ธุรกรรมล่าสุด, กราฟวิเคราะห์, การจัดการทรัพย์สิน และภาพรวมการเงิน</li>
+                        <li><strong>แท็บบริการ:</strong> เชื่อมต่อกับแพลตฟอร์มบริการเกี่ยวกับบ้าน (เช่น Home Pro), การซ่อมแซม, ทำความสะอาด และสถานะงานของช่าง</li>
+                        <li><strong>การตั้งค่า:</strong> ปรับแต่งธีม (โหมดมืด/สว่าง), ภาษา และโซนเวลา</li>
+                        <li><strong>มุมมองเจ้าของที่พัก:</strong> เน้นการจัดการทรัพย์สิน, ติดตามเหตุการณ์, การเงิน และคำร้องขอรับบริการ</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 3: MVP Back-End -->
+            <div class="grid grid-cols-1 md:grid-cols-2 no-break">
+                <div class="p-6">
+                    <h3 class="text-lg font-bold text-blue-700 mb-3">MVP Demonstration - Back-End</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-sm md:text-base text-gray-700">
+                        <li><strong>Foundation:</strong> Designed for stability to avoid future core structural changes.</li>
+                        <li><strong>Security (Fuzzy Location):</strong> Shows approximate coordinates (like Facebook/Apple) to protect landlord privacy.</li>
+                        <li><strong>Integrations:</strong> APIs for registration, login, and LINE messenger.</li>
+                        <li><strong>LINE Notification:</strong> Using LINE Official Account for push notifications as web apps lack native push capabilities.</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-slate-50 th-text">
+                    <h3 class="text-lg font-bold text-blue-700 mb-3">การสาธิต MVP - ระบบหลังบ้าน (Back-End)</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-sm md:text-base text-gray-700">
+                        <li><strong>โครงสร้างพื้นฐาน:</strong> ออกแบบให้แกนหลักมีความเสถียร เพื่อลดการแก้ไขโครงสร้างใหญ่ในอนาคต</li>
+                        <li><strong>ความปลอดภัย (Fuzzy Location):</strong> แสดงพิกัดโดยประมาณ (คล้าย Facebook/Apple) เพื่อปกป้องความเป็นส่วนตัวของที่ตั้งจริง</li>
+                        <li><strong>การเชื่อมต่อ:</strong> มี API สำหรับการลงทะเบียน, เข้าสู่ระบบ และเชื่อมต่อกับ LINE</li>
+                        <li><strong>การแจ้งเตือนผ่าน LINE:</strong> ใช้ LINE Official Account สำหรับการแจ้งเตือน เนื่องจากเว็บแอปพลิเคชันไม่สามารถส่ง Push Notification ได้เหมือนแอปมือถือ</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 4: Innovation -->
+            <div class="grid grid-cols-1 md:grid-cols-2 no-break">
+                <div class="p-6">
+                    <h3 class="text-lg font-bold text-blue-700 mb-3">Key Innovation: Airbnb Import</h3>
+                    <p class="text-sm mb-2 italic text-gray-600">Rationale: Removes friction for landlords with multiple properties (20+ units).</p>
+                    <ul class="list-disc pl-5 space-y-2 text-sm md:text-base text-gray-700">
+                        <li><strong>One-Click Migration:</strong> Uses crawling/RPA to import data from Airbnb listings.</li>
+                        <li><strong>Automated:</strong> Extracts details and uploads photos to servers automatically.</li>
+                        <li><strong>Impact:</strong> Expected to significantly increase conversion rates.</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-slate-50 th-text">
+                    <h3 class="text-lg font-bold text-blue-700 mb-3">นวัตกรรมหลัก: การดึงข้อมูลจาก Airbnb</h3>
+                    <p class="text-sm mb-2 italic text-gray-600">เหตุผล: ลดความยุ่งยากสำหรับเจ้าของที่มีห้องพักจำนวนมาก (20+ ยูนิต) ที่ไม่อยากกรอกข้อมูลใหม่</p>
+                    <ul class="list-disc pl-5 space-y-2 text-sm md:text-base text-gray-700">
+                        <li><strong>ย้ายข้อมูลในคลิกเดียว:</strong> ใช้เทคโนโลยี Crawling/RPA เพื่อดึงข้อมูลจากรายการใน Airbnb โดยอัตโนมัติ</li>
+                        <li><strong>ระบบอัตโนมัติ:</strong> ดึงรายละเอียดและอัปโหลดรูปภาพขึ้นเซิร์ฟเวอร์ทันที</li>
+                        <li><strong>ผลลัพธ์:</strong> คาดว่าจะช่วยเพิ่มอัตราการเปลี่ยนผู้เยี่ยมชมให้เป็นลูกค้า (Conversion) ได้อย่างมีนัยสำคัญ</li>
+                    </ul>
+                </div>
+            </div>
+
+             <!-- Section 5: Company & Team -->
+             <div class="grid grid-cols-1 md:grid-cols-2 no-break">
+                <div class="p-6">
+                    <h3 class="text-lg font-bold text-blue-700 mb-3">Company Naming & Structure</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-sm md:text-base text-gray-700">
+                        <li><strong>Name:</strong> "SiamO" (Siam + O suffix for tech feel).</li>
+                        <li><strong>Domain:</strong> .com is expensive; considering alternatives.</li>
+                        <li><strong>Roles:</strong> Nicky (CTO), plus Financial Oversight (burn rate, projections).</li>
+                        <li><strong>Focus:</strong> Operations, Tech, Finance. Not doing construction yet.</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-slate-50 th-text">
+                    <h3 class="text-lg font-bold text-blue-700 mb-3">ชื่อบริษัทและโครงสร้างองค์กร</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-sm md:text-base text-gray-700">
+                        <li><strong>ชื่อ:</strong> "SiamO" (สยาม + ตัว O เพื่อให้ดูมีความเป็นนวัตกรรม/เทคโนโลยี)</li>
+                        <li><strong>โดเมน:</strong> .com ราคาสูงเกินไปในช่วงแรก กำลังพิจารณาทางเลือกอื่น</li>
+                        <li><strong>บทบาท:</strong> Nicky (CTO), และฝ่ายกำกับดูแลการเงิน (ดูอัตราการใช้เงิน, การคาดการณ์)</li>
+                        <li><strong>จุดเน้นช่วงแรก:</strong> การดำเนินงาน, เทคโนโลยี, และการเงิน (ยังไม่ทำรับเหมาก่อสร้างเอง)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 6: Strategy & Market -->
+            <div class="grid grid-cols-1 md:grid-cols-2 no-break">
+                <div class="p-6">
+                    <h3 class="text-lg font-bold text-blue-700 mb-3">Strategy & Target Market</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-sm md:text-base text-gray-700">
+                        <li><strong>Target:</strong> Entire home rentals (Airbnb revenue in TH is 800M THB/year).</li>
+                        <li><strong>Goal (18-Month):</strong> 50M THB Revenue (6.25% market share).</li>
+                        <li><strong>Service Platform:</strong> Connect via API to existing providers (Q-Chang, Home Pro) for commission (2-5%). Avoid in-house teams initially.</li>
+                        <li><strong>Advantage:</strong> Scraping Airbnb contacts for direct marketing.</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-slate-50 th-text">
+                    <h3 class="text-lg font-bold text-blue-700 mb-3">กลยุทธ์และกลุ่มเป้าหมาย</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-sm md:text-base text-gray-700">
+                        <li><strong>เป้าหมายหลัก:</strong> บ้านพักทั้งหลัง (รายได้ Airbnb ในไทยรวม 800 ล้านบาท/ปี)</li>
+                        <li><strong>เป้าหมาย 18 เดือน:</strong> รายได้ 50 ล้านบาท (ส่วนแบ่งตลาด 6.25%)</li>
+                        <li><strong>แพลตฟอร์มบริการ:</strong> เชื่อมต่อ API กับผู้ให้บริการเดิม (Q-Chang, Home Pro) เพื่อรับค่าคอมมิชชั่น (2-5%) หลีกเลี่ยงการจ้างทีมช่างเองในช่วงแรก</li>
+                        <li><strong>ข้อได้เปรียบ:</strong> ความสามารถในการดึงข้อมูลติดต่อจาก Airbnb เพื่อทำการตลาดโดยตรง</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 7: Action Items -->
+            <div class="col-span-1 md:col-span-2 bg-yellow-50 p-6 border-t border-yellow-200">
+                <h3 class="text-xl font-bold text-yellow-800 mb-4 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                    </svg>
+                    Action Items / สิ่งที่ต้องดำเนินการ
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Left Col English -->
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <input type="checkbox" class="mt-1 mr-3 h-5 w-5 text-blue-600 rounded">
+                            <span class="text-sm"><strong>@WOP Private:</strong> Create financial template (projections & expenses).</span>
+                        </div>
+                        <div class="flex items-start">
+                            <input type="checkbox" class="mt-1 mr-3 h-5 w-5 text-blue-600 rounded">
+                            <span class="text-sm"><strong>Team:</strong> Select payment gateway (after Jan 7th).</span>
+                        </div>
+                        <div class="flex items-start">
+                            <input type="checkbox" class="mt-1 mr-3 h-5 w-5 text-blue-600 rounded">
+                            <span class="text-sm"><strong>Nicky:</strong> Send demo platform link for review.</span>
+                        </div>
+                        <div class="flex items-start">
+                            <input type="checkbox" class="mt-1 mr-3 h-5 w-5 text-blue-600 rounded">
+                            <span class="text-sm"><strong>Team:</strong> Suggest domain name alternatives.</span>
+                        </div>
+                        <div class="flex items-start">
+                            <input type="checkbox" class="mt-1 mr-3 h-5 w-5 text-blue-600 rounded">
+                            <span class="text-sm"><strong>Team:</strong> Share interview summary (Home Pro/Q-Chang).</span>
+                        </div>
+                        <div class="flex items-start">
+                            <input type="checkbox" class="mt-1 mr-3 h-5 w-5 text-blue-600 rounded">
+                            <span class="text-sm"><strong>All:</strong> Prepare vision/big picture for Jan 7th meeting.</span>
+                        </div>
+                    </div>
+
+                    <!-- Right Col Thai -->
+                    <div class="space-y-3 th-text">
+                        <div class="flex items-start">
+                            <span class="text-sm"><strong>@WOP Private:</strong> จัดทำเทมเพลตการเงิน (ประมาณการรายรับและรายจ่าย)</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-sm"><strong>ทีมงาน:</strong> เลือก Payment Gateway (หลัง 7 ม.ค.)</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-sm"><strong>Nicky:</strong> ส่งลิงก์ระบบ Demo ให้ทีมรีวิว</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-sm"><strong>ทีมงาน:</strong> เสนอชื่อโดเมนทางเลือกในแชทกลุ่ม</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-sm"><strong>ทีมงาน:</strong> แชร์สรุปบทสัมภาษณ์เกี่ยวกับผู้ติดตั้ง (Home Pro/Q-Chang)</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-sm"><strong>ทุกคน:</strong> เตรียมนำเสนอวิสัยทัศน์/ภาพใหญ่สำหรับการประชุม 7 ม.ค.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-gray-50 p-6 text-center border-t border-gray-200 text-gray-500 text-xs md:text-sm">
+            <p><strong>Next Meeting:</strong> January 7th | <strong>Agenda:</strong> Future Vision Sharing</p>
+            <p class="th-text mt-1"><strong>นัดหมายถัดไป:</strong> 7 มกราคม | <strong>วาระการประชุม:</strong> แชร์วิสัยทัศน์และทิศทางในอนาคต</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
